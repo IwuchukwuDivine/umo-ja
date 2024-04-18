@@ -18,7 +18,7 @@
 					<v-icon class="mr-2" icon="mdi mdi-cash"></v-icon>
 					Refund
 				</v-btn>
-				<v-btn @click="edit = !edit" flat color="green" size="large" class="ml-4 text-grey-darken-3">
+				<v-btn @click="edit = !edit" flat color="mygreen" size="large" class="ml-4 text-grey-darken-3">
 					<v-icon class="mr-2" :icon="!edit ? 'mdi mdi-pencil' : 'mdi mdi-check-outline'"></v-icon>
 					{{ !edit ? "Edit" : "Update Order" }}
 				</v-btn>
@@ -38,7 +38,7 @@
 		<v-row>
 			<v-col cols="12" sm="8">
 				<v-sheet class="cardStyle mt-8">
-					<v-tabs v-model="tab" color="green">
+					<v-tabs v-model="tab" color="mygreen">
 						<v-tab v-for="item in ['Customer Details', 'Payments']" :key="item" :value="item" class="d-flex align-center">
 							{{ item }}
 						</v-tab>
@@ -253,7 +253,7 @@
 								</v-btn>
 							</v-col>
 							<v-col cols="6">
-								<v-btn style="" color="red" variant="tonal" block>
+								<v-btn style="" color="myred" variant="tonal" block>
 									<span style="font-weight: 400 !important; font-size: 14px !important; line-height: 20px !important">Delete</span>
 								</v-btn></v-col
 							>

@@ -36,7 +36,7 @@
          </v-text-field>
      <v-text-field placeholder="Enter Password" density="comfortable"  >
          </v-text-field>
-           <v-btn block color="green" flat size="x-large" class="rounded-xl"> Create an account</v-btn>
+           <v-btn block color="mygreen" flat size="x-large" class="rounded-xl"> Create an account</v-btn>
          </v-card>
      </div>
     </div> 

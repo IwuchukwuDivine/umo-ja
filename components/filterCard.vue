@@ -19,7 +19,7 @@ letter-spacing: -0.544px;">Category</p>
                 <div v-if="categoryExpand">
 
                 <v-chip-group
-        v-model="category" color="green"
+        v-model="category" color="mygreen"
         column
          
       >
@@ -50,7 +50,7 @@ letter-spacing: -0.544px;">Gender</p>
 <div v-if="genderExpand">
 
                 <v-chip-group
-        v-model="gender" color="green"
+        v-model="gender" color="mygreen"
         column
          
       >
@@ -80,7 +80,7 @@ letter-spacing: -0.544px;">Selling Type</p>
                 </div>
                 <v-expand-transition leave-absolute>
 <div v-if="sellingExpand">
-                <v-checkbox class="mb-1" hide-details="" density="compact" v-for="n in ['In-store selling only', 'Online selling only', 'Available in-store and online']" color="green" inset>  <template v-slot:label>
+                <v-checkbox class="mb-1" hide-details="" density="compact" v-for="n in ['In-store selling only', 'Online selling only', 'Available in-store and online']" color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p class="pl-2" style="color: #000!important;
@@ -143,7 +143,7 @@ letter-spacing: -0.544px;">Payment</p>
                 </div>
                 <v-expand-transition leave-absolute>
 <div v-if="payExpand">
-                <v-checkbox class="mb-1" hide-details="" density="compact" v-for="n in ['Cash on Delivery', 'Gengspayler', 'Card Payment']" color="green" inset>  <template v-slot:label>
+                <v-checkbox class="mb-1" hide-details="" density="compact" v-for="n in ['Cash on Delivery', 'Gengspayler', 'Card Payment']" color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p class="pl-2"  style="color: #000!important;
@@ -169,7 +169,7 @@ letter-spacing: -0.544px;">Product Rating</p>
                 </div>
                 <v-expand-transition leave-absolute>
 <div v-if="productExpand">
-                <v-checkbox class="mb-1 prat" hide-details="" density="compact" v-for="n in [4, 3, 2, 1]" color="green" inset>  <template style="opacity: 1!important;" v-slot:label>
+                <v-checkbox class="mb-1 prat" hide-details="" density="compact" v-for="n in [4, 3, 2, 1]" color="mygreen" inset>  <template style="opacity: 1!important;" v-slot:label>
                 <div class="d-flex pb-1 align-center">
                     <v-rating
     :model-value="n"  
@@ -231,7 +231,7 @@ letter-spacing: -0.544px;">Discount%</p>
 font-size: 14px;
 font-weight: 400;
 " prepend-inner-icon="mdi mdi-magnify" placeholder="Search to add sizes"></v-text-field>
-    <v-checkbox class="mb-1" hide-details="" density="compact" color="green" inset>  <template v-slot:label>
+    <v-checkbox class="mb-1" hide-details="" density="compact" color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p class="pl-2"  style="color: #000!important;
@@ -241,7 +241,7 @@ font-weight: 500;
 </div>
 </template>
 </v-checkbox>
-    <v-checkbox class="mb-1" hide-details="" density="compact" v-for="n in discounts" color="green" inset>  <template v-slot:label>
+    <v-checkbox class="mb-1" hide-details="" density="compact" v-for="n in discounts" color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p class="pl-2"  style="color: #000!important;

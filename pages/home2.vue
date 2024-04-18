@@ -13,7 +13,7 @@
 						The world first and largest e-commerce platform with a wide variety of authentic and sustainable African products.
 					</p>
 					<div class="pt-5">
-						<v-btn to="/discovery_page" color="green" size="large" flat rounded="xl" width="163px">
+						<v-btn to="/discovery_page" color="mygreen" size="large" flat rounded="xl" width="163px">
 							<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Start Exploring </span>
 						</v-btn>
 						<v-btn
@@ -336,7 +336,7 @@
 							></v-img>
 						</v-col>
 						<v-col class="px-0" cols="12" md="6" lg="6">
-							<v-card rounded="0" width="100%" height="100%" min-height="429" color="green" flat class="d-flex align-center">
+							<v-card rounded="0" width="100%" height="100%" min-height="429" color="mygreen" flat class="d-flex align-center">
 								<v-container style="max-width: 1200px" class="px-12">
 									<p
 										style="
@@ -405,7 +405,7 @@
 						density="comfortable"
 					>
 					</v-text-field>
-					<v-btn color="green" rounded="xl" size="x-large" flat width="134">Subscribe</v-btn>
+					<v-btn color="mygreen" rounded="xl" size="x-large" flat width="134">Subscribe</v-btn>
 				</div>
 				<p style="color: var(--carbon-1, #ededed); font-size: 14px; font-weight: 400; line-height: 180%; /* 25.2px */ letter-spacing: -0.42px">
 					You will be able to unsubscribe at anytime. Read our privacy policy
@@ -425,7 +425,7 @@
 					<div class="d-flex justify-space-between align-center">
 						<p style="font-size: 16px; font-weight: 600">{{ n.title }}</p>
 
-						<v-icon color="green" :icon="openid == i ? 'mdi mdi-minus' : 'mdi mdi-plus'"></v-icon>
+						<v-icon color="mygreen" :icon="openid == i ? 'mdi mdi-minus' : 'mdi mdi-plus'"></v-icon>
 					</div>
 					<v-expand-transition leave-absolute>
 						<p style="color: var(--carbon-4, #333); font-size: 14px; font-weight: 400; line-height: 180%" class="mt-4" v-if="openid == i">

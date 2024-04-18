@@ -13,7 +13,7 @@
 					style="height: 169px; max-width: 859px; width: 616px"
 					class="mb-8 py-4 rounded-lg pa-6 d-flex align-center"
 				>
-					<v-avatar size="80" class="mr-6" variant="tonal" color="green">
+					<v-avatar size="80" class="mr-6" variant="tonal" color="mygreen">
 						<v-icon size="40" class="" icon="mdi mdi-account"></v-icon>
 					</v-avatar>
 
@@ -28,10 +28,10 @@
 				<v-card
 					style="height: 169px; max-width: 859px; width: 616px"
 					flat
-					@click="$router.push('/vendor/registeration/form')"
+					@click="$router.push('/vendor/registeration/form/name')"
 					class="mb-4 rounded-lg pa-6 d-flex align-center"
 				>
-					<v-avatar size="80" class="mr-6" variant="tonal" color="green">
+					<v-avatar size="80" class="mr-6" variant="tonal" color="mygreen">
 						<v-icon size="40" class="" icon="mdi mdi-store"></v-icon>
 					</v-avatar>
 					<div style="max-width: 54%">

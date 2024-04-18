@@ -119,7 +119,7 @@ color: #333333;" class="mt-10">CONTACT INFORMATION</p>
 
        </v-row>
    <div class="d-flex mt-8 justify-end">
-       <v-btn to="/vendor/confirm"  width="420px" color="green" flat size="x-large" class="rounded-lg mt-6"> 
+       <v-btn to="/vendor/confirm"  width="420px" color="mygreen" flat size="x-large" class="rounded-lg mt-6"> 
            <span style="text-transform: none;">
             Save and Continue
         </span> <v-icon class="ml-4" icon="mdi mdi-arrow-right"></v-icon>

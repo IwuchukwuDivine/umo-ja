@@ -16,7 +16,7 @@ text-transform: uppercase;
 color: #333333;">CART (3)</h1>
 <v-divider class="my-4"></v-divider>
 <div class=" d-flex justify-space-between align-center">
-    <v-btn  color="red" variant="tonal"><span class="smallBtn">Clear cart</span>  <v-icon size="15" class="ml-1" icon="mdi mdi-trash-can-outline"></v-icon></v-btn>
+    <v-btn  color="myred" variant="tonal"><span class="smallBtn">Clear cart</span>  <v-icon size="15" class="ml-1" icon="mdi mdi-trash-can-outline"></v-icon></v-btn>
     
     <p class="text-overline text-grey-lighten-1">price</p>
 </div>
@@ -30,7 +30,7 @@ color: #333333;">CART (3)</h1>
     <v-img cover class="rounded-lg bg-grey-lighten-2" width="100%" height="180" src="https://res.cloudinary.com/payhospi/image/upload/v1684602010/Rectangle_459_1_wnr1ld.png"></v-img>
 </v-col>
 <v-col cols="6">
-    <v-chip size="x-small" class=" rounded-lg text-overline font-weight-regular" variant="tonal" color="green">in stock</v-chip>
+    <v-chip size="x-small" class=" rounded-lg text-overline font-weight-regular" variant="tonal" color="mygreen">in stock</v-chip>
     <p style="font-weight: 700;
 font-size: 16px;
 line-height: 140%;
@@ -48,7 +48,7 @@ font-size: 16px;" class="ml-2">The Golden Matrix</p>
 </v-col>
         </v-row>
         <div class="d-flex  pt-2 pb-4 justify-space-between">
-            <v-btn  color="red" variant="tonal"><span class="smallBtn">Remove</span>  <v-icon size="15" class="ml-1" icon="mdi mdi-close"></v-icon></v-btn>
+            <v-btn  color="myred" variant="tonal"><span class="smallBtn">Remove</span>  <v-icon size="15" class="ml-1" icon="mdi mdi-close"></v-icon></v-btn>
             <div class="d-flex align-center ">
                 <v-btn flat   color="orange" variant="tonal"><v-icon size="15" icon="mdi mdi-minus"></v-icon></v-btn>
                 <p style="font-weight: 500;
@@ -98,7 +98,7 @@ Every delivery is carried out by <span class="text-blue">
 </p>
 </div>
 </div>
-<v-btn to="/order/checkout" flat block size="x-large" color="green"> Proceed to checkout</v-btn>
+<v-btn to="/order/checkout" flat block size="x-large" color="mygreen"> Proceed to checkout</v-btn>
 </v-card>
 
 <v-img style="position: relative;border-radius: 10px;" class="mt-6 pt-10 bg-grey-lighten-1 pa-6 rounded-lg" width="100%" min-height="600px" cover eager src="https://res.cloudinary.com/payhospi/image/upload/v1684673782/Rectangle_465_sohqlg.png" height="auto">

@@ -164,7 +164,7 @@
 						style="border: none !important"
 						height="100%"
 						min-height="429"
-						color="green"
+						color="mygreen"
 						flat
 						class="cardStyle py-0 d-flex align-center"
 					>

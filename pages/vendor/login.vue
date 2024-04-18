@@ -16,14 +16,15 @@ letter-spacing: -0.03em;
 color: #333333;">Welcome Back</h1>
             <p class="font-weight-medium mb-6 mt-1">Don't have an account? <span @click="$router.push('/vendor/registeration/form/Companys Information')" style="cursor: pointer;color:#0076FF">Sign Up</span></p>
 
-
-        <p class="inputLabel">Email Address</p>             
+<v-form ref="form" @submit.prevent="handleLogin">
+    
+    <p class="inputLabel">Email Address</p>             
         
-        <v-text-field v-model="email" placeholder="Enter email address" density="comfortable"  >
+        <v-text-field v-model="email" :rules="emailRules" placeholder="Enter email address" density="comfortable"  >
         </v-text-field>
 
         <p class="inputLabel">Password</p>             
-    <v-text-field v-model="password" placeholder="Enter Password" density="comfortable"  >
+    <v-text-field v-model="password" :rules="passwordRules" placeholder="Enter Password" density="comfortable"  >
         </v-text-field>
 
          <v-btn to="/vendor/forgot"
@@ -32,23 +33,47 @@ color: #333333;">Welcome Back</h1>
               >
               Forgot Password?
               </v-btn>  
-  
-          <v-btn to="/vendor/dashboard/Homepage" block color="green" flat size="x-large" class="rounded-lg mt-6"> 
+              <p style="color: red; font-size: 16px">{{ vendorStore.loginError }}</p>
+          <v-btn type="submit" block color="mygreen" flat size="x-large" class="rounded-lg mt-6"> 
             <span style="text-transform: none;">
 
 Login
           </span>
         </v-btn>
+</v-form>
         </v-card>
     </div>
    </div> 
    <tutorial />
 </template>
-<script>
-export default {
-    data: () => ({
-        email: 'demo@gmail.com',
-        password: '123456',
-    }),
+<script setup>
+import { useVendorStore } from '~/stores/vendorStore';
+import { useRouter } from '#vue-router';
+import {passwordRules, emailRules} from '~/utils/formrules'
+
+    const email = ref("")
+    const password = ref("")
+
+    const vendorStore = useVendorStore()
+    const router = useRouter()
+
+
+
+   async function handleLogin() {
+    if (email.value && password.value) {
+        try {
+        const isLoggedIn = await vendorStore.login({ email: email.value, password: password.value });
+        if (isLoggedIn) {
+            const vendorName = vendorStore.vendor.ownerInfo.firstName
+            router.push(`/vendor/dashboard/${vendorName}`);
+            vendorStore.loginError = "";
+        } else {
+            // Show error message
+            console.error('Login failed');
+        }
+        } catch (error) {
+        console.error('An error occurred during login:', error);
+        }
+    }
 }
 </script>

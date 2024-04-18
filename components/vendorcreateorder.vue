@@ -110,7 +110,7 @@
            <span v-if="chosen !== item.sn ">
                {{ item.total }}
            </span>
-           <v-btn v-else color="green" size="small" class=" rounded-lg"> See details</v-btn>
+           <v-btn v-else color="mygreen" size="small" class=" rounded-lg"> See details</v-btn>
        </td> -->
 							</tr>
 						</tbody>
@@ -180,17 +180,17 @@
 					<v-row class="mt-4">
 						<v-col cols="12" md="4">
 							<div class="px-2 py-1 w-100" style="border-radius: 6px; border: 0.5px solid #cecece">
-								<v-radio label="Mark as paid" color="green" value="1"></v-radio>
+								<v-radio label="Mark as paid" color="mygreen" value="1"></v-radio>
 							</div>
 						</v-col>
 						<v-col cols="12" md="4">
 							<div class="px-2 py-1 w-100" style="border-radius: 6px; border: 0.5px solid #cecece">
-								<v-radio label="Mark as pending" color="green" value="2"></v-radio>
+								<v-radio label="Mark as pending" color="mygreen" value="2"></v-radio>
 							</div>
 						</v-col>
 						<v-col cols="12" md="4">
 							<div class="px-2 py-1 w-100" style="border-radius: 6px; border: 0.5px solid #cecece">
-								<v-radio label="Pay with credit card" color="green" value="3"></v-radio>
+								<v-radio label="Pay with credit card" color="mygreen" value="3"></v-radio>
 							</div>
 						</v-col>
 					</v-row>
@@ -200,7 +200,7 @@
 					<div class="d-flex justify-space-between align-center">
 						<p style="color: #333; font-size: 20px; font-weight: 600" class="">Timeline</p>
 						<div>
-							<v-checkbox color="green" hide-details>
+							<v-checkbox color="mygreen" hide-details>
 								<template v-slot:label>
 									<div style="color: #333; font-size: 14px; font-weight: 500; line-height: 20px; letter-spacing: -0.14px">Show comments</div>
 								</template>
@@ -225,7 +225,7 @@
 												<v-btn variant="text" icon flat class=""><span style="font-size: 32px">#</span></v-btn>
 												<v-btn variant="text" icon flat class=""><v-icon size="35" icon="mdi mdi-attachment"></v-icon></v-btn>
 											</div>
-											<v-btn size="large" color="green" flat>
+											<v-btn size="large" color="mygreen" flat>
 												<span style="font-size: 14px; font-weight: 600; line-height: 20px"> Post </span>
 											</v-btn>
 										</div>
@@ -287,7 +287,7 @@
 							</div>
 						</v-timeline-item>
 
-						<v-timeline-item class="" dot-color="green" size="x-small">
+						<v-timeline-item class="" dot-color="mygreen" size="x-small">
 							<div style="min-width: 40vw" class="d-flex justify-space-between flex-grow-1">
 								<div>
 									<p class="timelinetext">You created this order for Nweke Franklin from draft order</p>
@@ -398,7 +398,7 @@
 		</v-row>
 		<v-divider class="my-8"></v-divider>
 		<div class="d-flex justify-end">
-			<v-btn size="large" color="green" flat>
+			<v-btn size="large" color="mygreen" flat>
 				<span style="font-size: 14px; font-weight: 600; line-height: 20px"> Save Draft Order </span>
 			</v-btn>
 		</div>
@@ -423,7 +423,7 @@
 						style="color: var(--magnetic-green-4, #2c6e63); font-size: 14px; font-weight: 600; line-height: 20px; letter-spacing: -0.14px"
 						density="compact"
 						class="my-2"
-						color="green"
+						color="mygreen"
 						:items="['Basic Information', 'Shipping Details']"
 					>
 						<template v-slot:divider>
@@ -497,7 +497,7 @@
 										></v-col
 									>
 									<v-col cols="6">
-										<v-btn size="large" color="green" flat block>
+										<v-btn size="large" color="mygreen" flat block>
 											<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Save and Proceed </span></v-btn
 										></v-col
 									>
@@ -553,7 +553,7 @@
 										></v-col
 									>
 									<v-col cols="6">
-										<v-btn size="large" color="green" flat block>
+										<v-btn size="large" color="mygreen" flat block>
 											<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Save and Proceed </span></v-btn
 										></v-col
 									>

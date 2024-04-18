@@ -13,7 +13,7 @@
 					<v-icon class="mr-2" icon="mdi mdi-tray-arrow-up"></v-icon>
 					Export
 				</v-btn>
-				<v-btn @click="choose2()" flat color="green" size="large" class="ml-4 text-grey-darken-3">
+				<v-btn @click="choose2()" flat color="mygreen" size="large" class="ml-4 text-grey-darken-3">
 					<v-icon class="mr-2" icon="mdi mdi-plus"></v-icon>
 					Create Order
 				</v-btn>
@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<div class="mt-5">
-			<v-tabs v-model="tab" class="orders" color="green">
+			<v-tabs v-model="tab" class="orders" color="mygreen">
 				<v-tab @click.stop="sort(item.prop, item.value)" v-for="item in tabs" :key="item" :value="item" class="d-flex text-capitalize align-center">
 					{{ item.name }}
 				</v-tab>
@@ -134,7 +134,7 @@
             <span v-if="chosen !== item.sn ">
                 {{ item.total }}
             </span>
-            <v-btn v-else color="green" size="small" class=" rounded-lg"> See details</v-btn>
+            <v-btn v-else color="mygreen" size="small" class=" rounded-lg"> See details</v-btn>
         </td> -->
 					</tr>
 				</tbody>

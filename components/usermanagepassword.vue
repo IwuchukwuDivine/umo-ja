@@ -33,7 +33,7 @@ Cancel
 </v-btn>
     </v-col>
     <v-col cols="6">
-        <v-btn rounded="xl" block color="green" flat size="large" class=" menubar text-grey-darken-3" >
+        <v-btn rounded="xl" block color="mygreen" flat size="large" class=" menubar text-grey-darken-3" >
             Update password
 </v-btn>
     </v-col>

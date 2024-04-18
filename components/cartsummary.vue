@@ -114,7 +114,7 @@ font-weight: 600;" class="">€ 5,829.00 </p>
 </div>
 
 </div>
-<v-btn :to="route" flat block size="x-large" class="mt-8" rounded="xl" color="green"> <span style="font-size: 14px;
+<v-btn :to="route" flat block size="x-large" class="mt-8" rounded="xl" color="mygreen"> <span style="font-size: 14px;
 font-style: normal;
 font-weight: 600;">{{ text }}</span> </v-btn>
 </v-card>

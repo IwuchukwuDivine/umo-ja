@@ -28,7 +28,7 @@
 
 				<v-row>
 					<v-col cols="6">
-						<v-btn to="/vendor/newpass" block color="green" flat size="x-large" class="rounded-lg mr-1 mt-6">
+						<v-btn to="/vendor/newpass" block color="mygreen" flat size="x-large" class="rounded-lg mr-1 mt-6">
 							<span style="text-transform: none"> Reset password </span>
 						</v-btn></v-col
 					>

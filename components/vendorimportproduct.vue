@@ -14,7 +14,7 @@ font-weight: 600;" class="mt-4 mb-6">Import definitions</p>
         <p class="inputLabel">Select setting</p>             
      <v-select hide-details="" prepend-inner-icon="mdi mdi-lock"   append-inner-icon="mdi mdi-chevron-down"  placeholder="Default" density="compact"  >
          </v-select>
-         <v-switch inset color="green"  hide-details>
+         <v-switch inset color="mygreen"  hide-details>
             <template v-slot:label>
       <p style="color:#333;
 font-size: 14px;
@@ -32,7 +32,7 @@ font-weight: 600;" class="mt-4 mb-6">Import settings</p>
          </v-select>
      <v-select hide-details="" class="mt-4"  append-inner-icon="mdi mdi-chevron-down"  placeholder="Shop" density="compact"  >
          </v-select>
-         <v-switch inset color="green"  hide-details>
+         <v-switch inset color="mygreen"  hide-details>
             <template v-slot:label>
       <p style="color:#333;
 font-size: 14px;
@@ -44,14 +44,14 @@ font-weight: 500;">Body mode</p>
          </v-select>
          <v-text-field  class="mt-4" placeholder="Search terms seperated by commas" density="comfortable"  >
   </v-text-field>
-  <v-switch inset color="green"  hide-details>
+  <v-switch inset color="mygreen"  hide-details>
             <template v-slot:label>
       <p style="color:#333;
 font-size: 14px;
 font-weight: 500;">Only import new articles</p>
     </template>
          </v-switch>
-         <v-switch inset color="green"  hide-details>
+         <v-switch inset color="mygreen"  hide-details>
             <template v-slot:label>
       <p style="color:#333;
 font-size: 14px;
@@ -107,22 +107,22 @@ font-weight: 500;">
         </td>
         <td  class="tableThick px-1"> 
             <div >
-            <v-radio color="green" class="d-flex w-100 justify-center" v-model="rad"></v-radio>
+            <v-radio color="mygreen" class="d-flex w-100 justify-center" v-model="rad"></v-radio>
         </div>
     </td>
         <td  class="tableThick px-1"> 
             <div >
-            <v-radio color="green" class="d-flex w-100 justify-center" :value="true"></v-radio>
+            <v-radio color="mygreen" class="d-flex w-100 justify-center" :value="true"></v-radio>
         </div>
     </td>
         <td  class="tableThick px-1"> 
             <div >
-            <v-radio color="green" class="d-flex w-100 justify-center" :value="true"></v-radio>
+            <v-radio color="mygreen" class="d-flex w-100 justify-center" :value="true"></v-radio>
         </div>
     </td>
         <td  class="tableThick px-1"> 
             <div >
-            <v-radio color="green" class="d-flex w-100 justify-center" :value="true"></v-radio>
+            <v-radio color="mygreen" class="d-flex w-100 justify-center" :value="true"></v-radio>
         </div>
     </td>
     
@@ -134,7 +134,7 @@ font-weight: 500;">
         </v-row>
         <v-divider class="my-8"></v-divider>
         <div class="d-flex justify-end">
-            <v-btn  disabled size="large" color="green" flat>
+            <v-btn  disabled size="large" color="mygreen" flat>
 <span style="font-size: 14px;
 font-weight: 600;
 line-height: 20px;">

@@ -14,7 +14,7 @@ See All <v-icon class="ml-1" icon="mdi mdi-arrow-top-right"></v-icon>
         </div>
         <div class="">
                         <v-chip-group
-        v-model="category" color="green"
+        v-model="category" color="mygreen"
         column
          
       >

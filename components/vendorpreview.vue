@@ -28,7 +28,7 @@
 										></v-img>
 									</v-avatar>
 									<h3 class="py-4" style="font-size: 24px; font-weight: 800; line-height: 30px">
-										Thatdesignpro <v-icon color="#1273EB" size="22" icon="mdi mdi-check-decagram"></v-icon>
+										{{ vendor.companyInfo.businessName }} <v-icon color="#1273EB" size="22" icon="mdi mdi-check-decagram"></v-icon>
 									</h3>
 									<v-btn color="orange" width="80%" flat> Follow</v-btn>
 								</div>
@@ -49,7 +49,7 @@
 											></v-avatar>
 											<p class="textClass text-grey-darken-1 px-2">Country</p>
 										</div>
-										<h1>🇬🇭</h1>
+										<span style="font-size: 1.5rem;" :class="`flag-icon flag-icon-${ countryCodes[vendor.companyInfo.selectedBusinessCountry]?.toLowerCase()}`"></span>
 									</div>
 								</div>
 								<v-divider></v-divider>
@@ -57,24 +57,21 @@
 									<v-avatar rounded="0" size="19"
 										><v-img src="https://res.cloudinary.com/payhospi/image/upload/v1684591613/umoja/location_q0ouqw.png"></v-img
 									></v-avatar>
-									<p class="textClass px-4">Shop 24b Drip King Plaza, Victoria Island Lagos state, Nigeria</p>
+									<p class="textClass px-4"><span v-if="vendor.contactInfo?.complexBuilding">{{ vendor.contactInfo?.complexBuilding }},</span> {{ vendor.contactInfo?.Address }}, {{ vendor.contactInfo?.city }}, {{ vendor.contactInfo?.state }} {{ vendor.contactInfo?.Country }}</p>
 								</div>
 								<v-divider></v-divider>
 								<v-sheet class="px-6 pt-8">
 									<h3 style="font-weight: 700; font-size: 24px; line-height: 30px; color: #333333">BIO <span class="text-grey">(Fabric)</span></h3>
 
 									<p class="textClass text-left mt-4 mb-8">
-										Lorem ipsum dolor sit amet consectetur. Sit et vulputate et euismod mi enim. Tellus sagittis augue proin ipsum posuere.
-										Suspendisse consectetur id mollis curabitur amet.
-										<br />
-										<br />
-										Pellentesque enim orci aenean interdum morbi suspendisse. Dictumst aliquam donec in risus semper arcu faucibus.
+										{{ vendor.businessInfo?.businessBio }}
 									</p>
 
 									<p style="font-weight: 700; font-size: 12px; line-height: 20px; color: #969696">ON THE WEB</p>
 									<div class="pt-4 justify-start align-center d-flex">
 										<v-btn
 											size="small"
+											@click="openSocialMedia(n.icon, n.handle)"
 											style="border: 0.357149px solid #2c6e63"
 											class="green-hover rounded-xl mr-4"
 											variant="outlined"
@@ -83,7 +80,7 @@
 											flat
 											icon
 										>
-											<v-avatar rounded="0" size="23"><v-icon color="green" :icon="'mdi mdi-' + n.icon"></v-icon></v-avatar>
+											<v-avatar rounded="0" size="23"><v-icon color="mygreen" :icon="'mdi mdi-' + n.icon"></v-icon></v-avatar>
 										</v-btn>
 									</div>
 									<div class="pt-12 mt-12 justify-start align-center d-flex">
@@ -95,19 +92,19 @@
 											variant="text"
 											block
 											class="green-hover mb-8"
-											color="green"
+											color="mygreen"
 										>
 											<v-icon class="mr-2" icon="mdi mdi-pencil"></v-icon> Edit Profile
 										</v-btn>
 									</div>
-									<p class="text-center textClass text-grey-darken-1">MEMBER SINCE: MARCH 24, 2020</p>
+									<p class="text-center textClass text-grey-darken-1">MEMBER SINCE: {{ vendor.dateRegistered }}</p>
 								</v-sheet>
 							</v-sheet>
 						</v-card>
 					</v-col>
 					<v-col md="8" xs="12">
 						<v-sheet style="overflow: hidden" color="transparent" class="mt-2">
-							<v-tabs v-model="tab" color="green" grow>
+							<v-tabs v-model="tab" color="mygreen" grow>
 								<v-tab v-for="item in ['products', 'posts', 'articles', 'promo%']" :key="item" :value="item" class="d-flex align-center">
 									{{ item }}
 									<v-badge v-if="item !== 'promo%'" class="ml-4 mb-1 px-1" rounded="lg" color="grey-lighten-2" content="2" size="12"></v-badge>
@@ -139,7 +136,19 @@
 	</div>
 </template>
 <script>
+import { useVendorStore } from '~/stores/vendorStore';
+import {countryCodes} from '~/utils/countryapi.js'
+
 export default {
+	setup() {
+		const vendorStore = useVendorStore()
+		const vendor = vendorStore.getVendor
+
+		return {
+			vendorStore,
+			vendor
+		}
+	},
 	data() {
 		return {
 			placescards: false,
@@ -215,20 +224,25 @@ export default {
 			],
 		};
 	},
+
 	computed: {
 		buttons() {
 			return [
 				{
 					icon: "youtube",
+					handle: this.vendor.contactInfo?.youtubeHandle
 				},
 				{
 					icon: "twitter",
+					handle: this.vendor.contactInfo?.twitterHandle
 				},
 				{
 					icon: "facebook",
+					handle: this.vendor.contactInfo?.facebookHandle
 				},
 				{
-					icon: "linkedin",
+					icon: "instagram",
+					handle: this.vendor.contactInfo?.instagramHandle
 				},
 			];
 		},
@@ -251,6 +265,8 @@ export default {
 			var newText = text.length > 40 ? text.slice(0, 40) + "..." : text;
 			return newText;
 		},
+		openSocialMedia(icon, handle) {
+      		window.open(`https://${icon}.com/${handle}`, '_blank');}
 	},
 };
 </script>

@@ -83,7 +83,7 @@ Pellentesque enim orci aenean interdum morbi suspendisse. Dictumst aliquam donec
                     <v-tabs
       v-model="tab"
       bg-color="#F7F7F7"
-      color="green"
+      color="mygreen"
       grow
     >
       <v-tab class="f"
@@ -185,7 +185,7 @@ color: #333333;">hours</p>
             <div class="d-flex align-center">
 
                 <h1 class="itemCost">${{n.price}}</h1>
-                <v-chip v-if="n.oos == true" color="red" size="small" class="ml-2 rounded-lg"><v-icon size="12" class="mr-1 " icon="mdi mdi-cancel"></v-icon> out of stock</v-chip>
+                <v-chip v-if="n.oos == true" color="myred" size="small" class="ml-2 rounded-lg"><v-icon size="12" class="mr-1 " icon="mdi mdi-cancel"></v-icon> out of stock</v-chip>
             </div>
             <v-divider class="my-4"></v-divider>
             <div class="d-flex align-center justify-space-between">

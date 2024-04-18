@@ -241,7 +241,7 @@
 										</p>
 										<div class="mt-2">
 											<v-btn variant="text" class=""><span style="color: #333; font-size: 16px; font-weight: 600">Edit</span> </v-btn>
-											<v-btn variant="text" color="red" class="ml-2"><span style="font-size: 16px; font-weight: 600">Delete</span> </v-btn>
+											<v-btn variant="text" color="myred" class="ml-2"><span style="font-size: 16px; font-weight: 600">Delete</span> </v-btn>
 										</div>
 									</div>
 								</td>
@@ -280,7 +280,7 @@
 				<v-textarea persistent-counter :counter="200" class="reviewtextarea" variant="outlined" placeholder="Add a comment"> </v-textarea>
 				<div class="d-flex my-2 align-center justify-space-between">
 					<p style="font-size: 32px">🙂</p>
-					<v-btn color="green" flat width="97" size="large">Send</v-btn>
+					<v-btn color="mygreen" flat width="97" size="large">Send</v-btn>
 				</div>
 			</v-card>
 		</v-dialog>

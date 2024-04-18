@@ -28,7 +28,7 @@
             <br> habitasse morbi quam dignissim.</p>
             <div class="btn" style="opacity: 0;height: 113px;">
 
-                <v-btn width="225"  height="44" rounded="xl" flat  style="" color="green"> Shop Now</v-btn>
+                <v-btn width="225"  height="44" rounded="xl" flat  style="" color="mygreen"> Shop Now</v-btn>
             </div>
                 </v-col>
                 <v-col class=" pl-9 pa-4" cols="12" md="8">

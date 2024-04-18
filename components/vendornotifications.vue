@@ -5,7 +5,7 @@
 
             <v-tabs
             v-model="tab" class="orders"
-            color="green"
+            color="mygreen"
             
             >
             <v-tab 
@@ -112,7 +112,7 @@ font-weight: 500;" class="mt-1">{{ n.time }}</p>
 </div>
 </div>
 </div>
-<v-icon icon="mdi mdi-circle" size="10" color="green" v-if="n.unread"></v-icon>
+<v-icon icon="mdi mdi-circle" size="10" color="mygreen" v-if="n.unread"></v-icon>
 
 </v-sheet>
 <v-divider v-show="(k + 1) < g.notifications.length"></v-divider>

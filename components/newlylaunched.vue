@@ -25,7 +25,7 @@
             <v-col class="d-flex flex-column justify-space-between" cols="12" md="6">
               <div>
 
-            <v-chip class="chip pa-3" rounded="lg" color="green" style="color:  #2C6E63;
+            <v-chip class="chip pa-3" rounded="lg" color="mygreen" style="color:  #2C6E63;
 font-size: 12px;
 font-weight: 500;
 line-height: 140%; /* 16.8px */

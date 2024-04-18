@@ -39,7 +39,7 @@ letter-spacing: -0.14px;
     <div  class=" align-center justify-space-between d-flex">
         <div class="d-flex align-center">
 
-            <v-icon color="green" icon="mdi mdi-circle-slice-8" size="30"></v-icon>
+            <v-icon color="mygreen" icon="mdi mdi-circle-slice-8" size="30"></v-icon>
             <div class="text-capitalize   px-4">
                 <p style="font-weight: 500;
 font-size: 14px;
@@ -70,8 +70,8 @@ color: #333333;" class="">Credit Card</p>
      <v-text-field placeholder="CVV" density="comfortable"  >
          </v-text-field></v-col>
          </v-row> 
-         <v-btn class="textClass px-8" rounded="xl" color="green" flat>Use this card</v-btn>          
-              <v-btn variant="tonal" class="textClass ml-2 px-8" rounded="xl" color="green" flat>Cancel</v-btn>          
+         <v-btn class="textClass px-8" rounded="xl" color="mygreen" flat>Use this card</v-btn>          
+              <v-btn variant="tonal" class="textClass ml-2 px-8" rounded="xl" color="mygreen" flat>Cancel</v-btn>          
          </v-card>              
            <v-card flat :color="n.cost == '0.00'? '#EDF3F0': ''"   class="pa-4 cardStyle rounded-lg justify-space-between align-center my-4 d-flex" v-for="n in paymenthods" :key="n">
    <div  class=" align-center d-flex">
@@ -97,7 +97,7 @@ color: #333333;" class="">{{n.name}}</p>
 
 <v-card flat class="cardStyle bg-white rounded-lg my-4 pa-4">
     <p class="chkt mb-">Billing Address</p>
-    <v-checkbox hide-details="" class="my-4" color="green">
+    <v-checkbox hide-details="" class="my-4" color="mygreen">
        <template v-slot:label>
          <div style="font-size: 14px;" class="font-weight-medium">
             Same as my shipping address
@@ -135,13 +135,13 @@ color: #333333;" class="">{{n.name}}</p>
 </v-text-field>
 <v-select append-inner-icon="mdi mdi-chevron-down" placeholder="Select country" density="comfortable"  >
          </v-select>
-<v-btn class="textClass px-8" color="green" flat>Use this card</v-btn>          
-         <v-btn variant="tonal" class="textClass ml-2 px-8" color="green" flat>Cancel</v-btn>          
+<v-btn class="textClass px-8" color="mygreen" flat>Use this card</v-btn>          
+         <v-btn variant="tonal" class="textClass ml-2 px-8" color="mygreen" flat>Cancel</v-btn>          
          
 </v-card>
 <v-card flat class="cardStyle bg-white rounded-lg  pa-4">
     <p class="chkt mb-">Remember my information</p>
-    <v-checkbox hide-details="" color="green">
+    <v-checkbox hide-details="" color="mygreen">
        <template v-slot:label>
          <div style="font-size: 14px;" class="font-weight-medium">
             Save my information for future checkout

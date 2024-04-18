@@ -43,7 +43,7 @@
 					<v-icon class="mr-2" icon="mdi mdi-tray-arrow-up"></v-icon>
 					Export
 				</v-btn>
-				<v-btn @click="choose('Add Products')" flat color="green" size="default" class="ml-4 menubar text-grey-darken-3">
+				<v-btn @click="choose('Add Products')" flat color="mygreen" size="default" class="ml-4 menubar text-grey-darken-3">
 					<v-icon class="mr-2" icon="mdi mdi-plus"></v-icon>
 					Add products
 				</v-btn>
@@ -51,7 +51,7 @@
 		</div>
 
 		<div class="mt-5">
-			<v-tabs v-model="tab" class="orders" color="green">
+			<v-tabs v-model="tab" class="orders" color="mygreen">
 				<v-tab @click.stop="sort(item.prop, item.value)" v-for="item in tabs" :key="item" :value="item" class="d-flex text-capitalize align-center">
 					{{ item.name }}
 				</v-tab>
@@ -140,7 +140,7 @@
 							</div>
 						</td>
 						<td class="tableLight px-1">
-							<v-chip style="color: #333; font-size: 10px; font-weight: 500" rounded="lg" class="" size="small" color="green" variant="tonal">
+							<v-chip style="color: #333; font-size: 10px; font-weight: 500" rounded="lg" class="" size="small" color="mygreen" variant="tonal">
 								Active
 							</v-chip>
 						</td>
@@ -160,7 +160,7 @@
            <span v-if="chosen !== item.sn ">
                {{ item.total }}
            </span>
-           <v-btn v-else color="green" size="small" class=" rounded-lg"> See details</v-btn>
+           <v-btn v-else color="mygreen" size="small" class=" rounded-lg"> See details</v-btn>
        </td> -->
 					</tr>
 				</tbody>

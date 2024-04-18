@@ -62,7 +62,7 @@
 							@click="logout"
 							width="250"
 							size="x-large"
-							color="red"
+							color="myred"
 							variant="outlined"
 							class="mt-2"
 							style="border-radius: 6px; border: 1px solid var(--carbon-2, #cecece)"
@@ -126,6 +126,10 @@
 	</div>
 </template>
 <script>
+definePageMeta({
+middleware: "auth"
+})
+
 import { useUserStore } from "~/stores/userStore";
 
 export default {

@@ -16,7 +16,7 @@ font-weight: 400;">Lorem ipsum dolor sit amet consectetur. Mattis vitae.</p>
                 <v-avatar size="50" class="pa-2" :color="n.color" rounded="lg">
                 <v-img style="opacity: 0.4;" src="https://res.cloudinary.com/payhospi/image/upload/c_fit,w_100/v1693570621/frame_hcvde3.png"></v-img></v-avatar>
 
-                <v-btn class="rounded-lg" v-if="isIntegrated(n.id)" variant="tonal" color="green" @click="uninstall(n.id)" > <v-icon class="mr-1" icon="mdi mdi-lightning-bolt-outline"></v-icon>  <span style="
+                <v-btn class="rounded-lg" v-if="isIntegrated(n.id)" variant="tonal" color="mygreen" @click="uninstall(n.id)" > <v-icon class="mr-1" icon="mdi mdi-lightning-bolt-outline"></v-icon>  <span style="
                 font-size: 14px;
                 font-weight: 600;">Connected</span></v-btn>
                 <v-btn  v-else style="    border: 1px solid #e5e5e5;"  class=" rounded-lg " @click="integrate(n.id)"  color="white" variant="tonal"> <v-icon color="#333" class="mr-1" icon="mdi mdi-lightning-bolt-circle"></v-icon> 

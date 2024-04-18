@@ -89,11 +89,11 @@
 											flat
 											icon
 										>
-											<v-avatar rounded="0" size="23"><v-icon color="green" :icon="'mdi mdi-' + n.icon"></v-icon></v-avatar>
+											<v-avatar rounded="0" size="23"><v-icon color="mygreen" :icon="'mdi mdi-' + n.icon"></v-icon></v-avatar>
 										</v-btn>
 									</div>
 									<div class="pt-12 mt-12 justify-start align-center d-flex">
-										<!-- <v-btn style="border: 0.357149px solid #2C6E63;" flat size="large" variant="text" block class="mb-8 green-hover" color="green" ><v-icon class="mr-2" icon="mdi mdi-pencil"></v-icon> Edit Profile</v-btn> -->
+										<!-- <v-btn style="border: 0.357149px solid #2C6E63;" flat size="large" variant="text" block class="mb-8 green-hover" color="mygreen" ><v-icon class="mr-2" icon="mdi mdi-pencil"></v-icon> Edit Profile</v-btn> -->
 									</div>
 									<p class="text-center textClass text-grey-darken-1">MEMBER SINCE: MARCH 24, 2020</p>
 								</v-sheet>
@@ -102,7 +102,7 @@
 					</v-col>
 					<v-col md="8" xs="12">
 						<v-sheet style="overflow: hidden" color="transparent" class="mt-2">
-							<v-tabs v-model="tab" color="green" grow>
+							<v-tabs v-model="tab" color="mygreen" grow>
 								<v-tab v-for="item in ['products', 'posts', 'articles', 'promo%']" :key="item" :value="item" class="d-flex align-center">
 									{{ item }}
 									<v-badge v-if="item !== 'promo%'" class="ml-4 mb-1 px-1" rounded="lg" color="grey-lighten-2" content="2" size="12"></v-badge>

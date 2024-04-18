@@ -138,28 +138,40 @@
 	max-width: calc(100% - 85px);
 }
 </style>
-<script>
-export default {
-	data() {
-		return {
-			sidebar: true,
-			edit: true,
-		};
-	},
-	computed: {
-		window: {
-			get() {
-				return this.$route.params.name ? this.$route.params.name : "Homepage";
-			},
-		},
-	},
-	methods: {
-		changePage(n) {
-			this.$router.push(`/vendor/dashboard/${n}`);
-		},
-		sideFn() {
-			this.sidebar = false;
-		},
-	},
-};
+
+<script setup>
+definePageMeta({
+middleware: "vendor-auth"
+})
+
+
+import { ref, computed } from 'vue';
+import { useVendorStore } from '~/stores/vendorStore';
+import { useRouter, useRoute } from '#vue-router';
+
+
+const sidebar = ref(true);
+const edit = ref(true);
+const router = useRouter();
+const route = useRoute()
+const vendor = ref([])
+
+const window = computed(() => {
+
+  return route.params.name ? route.params.name : "Homepage";
+});
+
+function changePage(n) {
+  router.push(`/vendor/dashboard/${n}`);
+}
+
+function sideFn() {
+  sidebar.value = false;
+}
+
+onMounted(() => {
+  const vendorStore = useVendorStore();
+  vendor.value = vendorStore.getVendor;
+  router.currentRoute.value.params.name = vendor.value.ownerInfo.firstName;
+  })
 </script>

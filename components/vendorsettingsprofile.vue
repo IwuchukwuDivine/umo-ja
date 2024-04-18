@@ -152,7 +152,7 @@ font-weight: 600;">Address </p>
 font-weight: 600;">Delete Account </p>
 <div>
 
-    <v-btn  color="red"   flat size="default" class="ml-4 menubar text-grey-darken-3" >
+    <v-btn  color="myred"   flat size="default" class="ml-4 menubar text-grey-darken-3" >
         <v-icon class="mr-2" icon="mdi mdi-trash-can-outline"></v-icon>
                 Delete Account
             </v-btn>

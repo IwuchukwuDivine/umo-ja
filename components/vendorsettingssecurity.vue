@@ -22,7 +22,7 @@ pellentesque massa tellus ac augue.</p>
 
 <div>
 
-    <v-btn color="green" flat size="default" class="ml-4 menubar text-grey-darken-3" >
+    <v-btn color="mygreen" flat size="default" class="ml-4 menubar text-grey-darken-3" >
 Enable
 </v-btn>
 </div>
@@ -127,7 +127,7 @@ Cancel
 </v-btn>
     </v-col>
     <v-col cols="6">
-        <v-btn block color="green" flat size="large" class=" menubar text-grey-darken-3" >
+        <v-btn block color="mygreen" flat size="large" class=" menubar text-grey-darken-3" >
             Update password
 </v-btn>
     </v-col>
@@ -174,7 +174,7 @@ font-weight: 600;">Devices</p>
                         style="color: #969696;
 font-size: 14px;
 font-weight: 400;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo.</p>
-    <v-btn  color="green" flat size="large" class="mt-5 mb-8 menubar text-grey-darken-3" >
+    <v-btn  color="mygreen" flat size="large" class="mt-5 mb-8 menubar text-grey-darken-3" >
         Sign out from all devices
 </v-btn>
 <div v-for="(n, i) in [{icon:'cellphone', name: 'iPhone 11'}, {icon:'laptop', name: 'Macbook Pro'},  {icon:'cellphone', name: 'iphone SE'},{icon:'cellphone', name: 'iPhone 11'}  ]" :key="i">

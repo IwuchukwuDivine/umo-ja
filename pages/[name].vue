@@ -5,7 +5,7 @@
 			<div class="d-flex">
 				<p
 					style="cursor: pointer; font-size: 14px"
-					:class="select == n ? 'text-green font-weight-bold' : ''"
+					:class="select == n ? 'text-mygreen font-weight-bold' : ''"
 					@click="selectCategory(n)"
 					class="font-weight-medium text-capitalize py-3 px-4 mr-4 text-grey"
 					v-for="n in ['fashion', 'art', 'cosmetics', 'home decoration']"

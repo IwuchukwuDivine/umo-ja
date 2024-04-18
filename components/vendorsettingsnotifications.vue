@@ -20,12 +20,12 @@ messages</p>
     </v-col>
     <v-col cols="12" lg="9">
         <div>
-            <v-switch :model-value="true"  color="green" inset>  <template v-slot:label>
+            <v-switch :model-value="true"  color="mygreen" inset>  <template v-slot:label>
       <span style="color: #333;
 font-size: 14px;
 font-weight: 500;
 ">On</span></template></v-switch>
-            <v-checkbox :model-value="true"  color="green" inset>  <template v-slot:label>
+            <v-checkbox :model-value="true"  color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p style="color: #000!important;
@@ -39,7 +39,7 @@ font-weight: 500;">The latest news about the latest features and software update
 </div>
 </template>
 </v-checkbox>
-            <v-checkbox color="green" inset>  <template v-slot:label>
+            <v-checkbox color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p style="color: #000!important;
@@ -53,7 +53,7 @@ font-weight: 500;">Tips and tricks in order to increase your performance efficie
 </div>
 </template>
 </v-checkbox>
-            <v-checkbox :model-value="true" color="green" inset>  <template v-slot:label>
+            <v-checkbox :model-value="true" color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p style="color: #000!important;
@@ -87,12 +87,12 @@ messages</p>
     </v-col>
     <v-col cols="12" lg="9">
         <div>
-            <v-switch :model-value="true"  color="green" inset>  <template v-slot:label>
+            <v-switch :model-value="true"  color="mygreen" inset>  <template v-slot:label>
       <span style="color: #333;
 font-size: 14px;
 font-weight: 500;
 ">On</span></template></v-switch>
-            <v-checkbox :model-value="false"  color="green" inset>  <template v-slot:label>
+            <v-checkbox :model-value="false"  color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p style="color: #000!important;
@@ -106,7 +106,7 @@ font-weight: 500;">Notify me all system activities and reminders that have been 
 </div>
 </template>
 </v-checkbox>
-            <v-checkbox color="green" inset>  <template v-slot:label>
+            <v-checkbox color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p style="color: #000!important;
@@ -121,7 +121,7 @@ decreasing data</p>
 </div>
 </template>
 </v-checkbox>
-            <v-checkbox :model-value="true" color="green" inset>  <template v-slot:label>
+            <v-checkbox :model-value="true" color="mygreen" inset>  <template v-slot:label>
                 <div>
 
                     <p style="color: #000!important;

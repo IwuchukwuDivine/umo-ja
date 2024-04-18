@@ -9,7 +9,7 @@
 					<v-icon class="mr-2" icon="mdi mdi-tray-arrow-down"></v-icon>
 					Import
 				</v-btn>
-				<v-btn @click="dialog2 = true" flat color="green" size="large" class="ml-4 text-grey-darken-3">
+				<v-btn @click="dialog2 = true" flat color="mygreen" size="large" class="ml-4 text-grey-darken-3">
 					<v-icon class="mr-2" icon="mdi mdi-plus"></v-icon>
 					Add Customer
 				</v-btn>
@@ -52,7 +52,7 @@
 						style="font-weight: 600; font-size: 14px; line-height: 20px; color: #2c6e63"
 						rounded="lg"
 						size="x-large"
-						color="green"
+						color="mygreen"
 						variant="tonal"
 						v-for="tag in ['All time', 'USA, CANADA, UK...']"
 						:key="tag"
@@ -87,7 +87,7 @@
 				<thead>
 					<tr style="background: #e6edec; border-radius: 6px; height: 55px" class="rounded-lg">
 						<th style="width: 50px" class="font-weight-medium text-left">
-							<v-checkbox color="green" hide-details></v-checkbox>
+							<v-checkbox color="mygreen" hide-details></v-checkbox>
 						</th>
 						<th style="font-size: 14px; color: #333333; width: 100px" class="font-weight-medium text-left">ID</th>
 						<th style="font-size: 14px; color: #333333" class="text-left px-1 font-weight-medium text-capitalize">Username</th>
@@ -101,7 +101,7 @@
 				<tbody>
 					<tr @click="dialog = true" :style="chosen == item.sn ? 'background:#DFDFDF' : ''" v-for="item in items" :key="item.sn">
 						<td class="text-grey-lighten-1 pl-4 px-1">
-							<v-checkbox color="green" hide-details></v-checkbox>
+							<v-checkbox color="mygreen" hide-details></v-checkbox>
 						</td>
 						<td style="font-size: 14px" class="tableLight px-1 pl-2">
 							{{ item.sn }}
@@ -170,7 +170,7 @@
            <span v-if="chosen !== item.sn ">
                {{ item.total }}
            </span>
-           <v-btn v-else color="green" size="small" class=" rounded-lg"> See details</v-btn>
+           <v-btn v-else color="mygreen" size="small" class=" rounded-lg"> See details</v-btn>
        </td> -->
 					</tr>
 				</tbody>
@@ -197,7 +197,7 @@
 
 								<p style="font-weight: 600; font-size: 24px; line-height: 32px; color: #1a1d1f">Customer #23456</p>
 							</div>
-							<v-btn style="border: 1px solid #c20052" variant="outlined" size="large" class="ml-4" color="red">
+							<v-btn style="border: 1px solid #c20052" variant="outlined" size="large" class="ml-4" color="myred">
 								<v-icon class="mr-2" icon="mdi mdi-trash-can-outline"></v-icon>
 								Remove Customer
 							</v-btn>
@@ -221,7 +221,7 @@
 										<span class=""> Follows you </span>
 									</v-chip>
 									<v-chip
-										color="green"
+										color="mygreen"
 										size="small"
 										style="font-size: 10px; font-weight: 500; width: 98px"
 										rounded="lg"
@@ -314,7 +314,7 @@
 						</v-card>
 
 						<v-card height="auto" class="mx-auto px-6 pt-6 coolTable pb-12" width="100%" style="overflow: hidden" flat>
-							<v-tabs v-model="tab" class="orders" color="green">
+							<v-tabs v-model="tab" class="orders" color="mygreen">
 								<v-tab
 									@click.stop="sort(item.prop, item.value)"
 									v-for="item in tabs"
@@ -418,7 +418,7 @@
 																	style="color: #333; font-size: 14px; font-style: normal; font-weight: 500; line-height: normal"
 																	class="d-flex align-center"
 																>
-																	4589058409584045845 <v-icon size="x-small" color="green" class="ml-2" icon="mdi mdi-content-copy"></v-icon>
+																	4589058409584045845 <v-icon size="x-small" color="mygreen" class="ml-2" icon="mdi mdi-content-copy"></v-icon>
 																</p>
 															</v-col>
 															<v-col>
@@ -457,7 +457,7 @@
 																</p>
 															</v-col>
 															<v-col style="position: relative">
-																<v-icon style="top: -28px; left: 5%; position: absolute" color="green" icon="mdi mdi-check-circle"></v-icon>
+																<v-icon style="top: -28px; left: 5%; position: absolute" color="mygreen" icon="mdi mdi-check-circle"></v-icon>
 																<p class="mb-2" style="color: #969696; font-size: 14px; font-style: normal; font-weight: 500; line-height: normal">
 																	Delivery type
 																</p>
@@ -519,7 +519,7 @@
 						style="color: var(--magnetic-green-4, #2c6e63); font-size: 14px; font-weight: 600; line-height: 20px; letter-spacing: -0.14px"
 						density="compact"
 						class="my-2"
-						color="green"
+						color="mygreen"
 						:items="['Basic Information', 'Shipping Details']"
 					>
 						<template v-slot:divider>
@@ -593,7 +593,7 @@
 										></v-col
 									>
 									<v-col cols="6">
-										<v-btn size="large" color="green" flat block>
+										<v-btn size="large" color="mygreen" flat block>
 											<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Save and Proceed </span></v-btn
 										></v-col
 									>
@@ -649,7 +649,7 @@
 										></v-col
 									>
 									<v-col cols="6">
-										<v-btn size="large" color="green" flat block>
+										<v-btn size="large" color="mygreen" flat block>
 											<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Save and Proceed </span></v-btn
 										></v-col
 									>

@@ -59,7 +59,7 @@ font-weight: 600;" class="d-flex align-center">
    <v-icon icon="mdi mdi-pencil-outline"></v-icon> Edit
 </span>
 </v-btn>
-<v-btn variant="outlined" color="red" flat style="border: 1px solid var(--carbon-2, #CECECE);" class=" ml-2" rounded="xl">
+<v-btn variant="outlined" color="myred" flat style="border: 1px solid var(--carbon-2, #CECECE);" class=" ml-2" rounded="xl">
     
     <span style="
 font-size: 14px;
@@ -71,7 +71,7 @@ font-weight: 600;" class="d-flex align-center">
 </div>
 </div>
 
-<v-btn @click="dialog = true" class="textClass px-8" rounded="xl" color="green" flat>Create New Address</v-btn>          
+<v-btn @click="dialog = true" class="textClass px-8" rounded="xl" color="mygreen" flat>Create New Address</v-btn>          
 </div>
 <v-dialog max-width="750" v-model="dialog">
 <v-sheet max-width="949" class="cardStyle pa-6">
@@ -122,8 +122,8 @@ font-weight: 600;">Add New Address</p>
      <v-text-field placeholder="Enter your zipcode" density="comfortable"  >
          </v-text-field>           
            
-         <v-btn class="textClass px-8" rounded="xl" color="green"  flat>Use this address</v-btn>          
-         <v-btn variant="tonal" class="textClass ml-2 px-8" rounded="xl" color="green" flat>Cancel</v-btn>          
+         <v-btn class="textClass px-8" rounded="xl" color="mygreen"  flat>Use this address</v-btn>          
+         <v-btn variant="tonal" class="textClass ml-2 px-8" rounded="xl" color="mygreen" flat>Cancel</v-btn>          
          
 </v-card>
     </v-sheet>

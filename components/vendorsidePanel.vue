@@ -27,10 +27,10 @@
 font-size: 12px;
 line-height: 18px;
 display: flex;
-color: #596066;">Nweke Franklin</p>
+color: #596066;">{{ vendor.ownerInfo.lastName }} {{ vendor.ownerInfo.firstName }}</p>
         </div>
         <v-spacer></v-spacer>
-        <v-icon color="green" icon="mdi mdi-chevron-down"></v-icon>
+        <v-icon color="mygreen" icon="mdi mdi-chevron-down"></v-icon>
     </div>
                     </v-card>
       </div>
@@ -54,8 +54,8 @@ color: #596066;">Nweke Franklin</p>
         <p v-show="sidebar" :class="selectedItem == n.text? 'text-green ':'text-grey'" class="style-3">{{ n.text }}</p>
 </div>
 <div class="d-flex align-center">
-<v-badge rounded="lg" color="green" content="2" size="12" v-if="n.text == 'Notifications'"></v-badge>
-<v-icon color="green" size="6" v-if="selectedItem == n.text && (n.text !== 'Notifications') && (n.text !== 'All Apps')" icon="mdi mdi-circle"></v-icon>
+<v-badge rounded="lg" color="mygreen" content="2" size="12" v-if="n.text == 'Notifications'"></v-badge>
+<v-icon color="mygreen" size="6" v-if="selectedItem == n.text && (n.text !== 'Notifications') && (n.text !== 'All Apps')" icon="mdi mdi-circle"></v-icon>
 <v-icon  size="20" v-if=" n.text == 'All Apps'" :icon="openapps?'mdi mdi-chevron-up':'mdi mdi-chevron-down'"></v-icon>
 </div>
 </div>
@@ -71,8 +71,8 @@ color: #596066;">Nweke Franklin</p>
         <v-icon size="18" :color="selectedSubItem == b.title? 'green ':'#969696'" class="mr-2" :icon="'mdi mdi-square-rounded'"></v-icon>
         <p v-show="sidebar" :class="selectedSubItem == b.title? 'text-green ':'text-grey'" class="style-3">{{ b.title }}</p>
 </div>
-<!-- <v-badge rounded="lg" color="green" content="2" size="12" v-if="b.text == 'Notification'"></v-badge> -->
-<v-icon color="green" size="6" v-if="selectedSubItem == b.text " icon="mdi mdi-circle"></v-icon>
+<!-- <v-badge rounded="lg" color="mygreen" content="2" size="12" v-if="b.text == 'Notification'"></v-badge> -->
+<v-icon color="mygreen" size="6" v-if="selectedSubItem == b.text " icon="mdi mdi-circle"></v-icon>
   </div>
   </div>
 </v-expand-transition>
@@ -135,13 +135,19 @@ line-height: 24px }
 </style>
 <script>
 import { useAppStore } from '@/stores/appStore';
+import { useVendorStore } from '~/stores/vendorStore';
+
+
 
 export default {
+  
     setup() {
     const appStore = useAppStore();
+    const vendorStore = useVendorStore();
 
     return {
       integratedApps: appStore.integratedApps,
+      vendor: vendorStore.getVendor
     };
   },
   mounted(){

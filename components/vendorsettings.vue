@@ -19,7 +19,7 @@
 							@click="logout"
 							block
 							size="x-large"
-							color="red"
+							color="myred"
 							variant="outlined"
 							style="border-radius: 6px; border: 1px solid var(--carbon-2, #cecece)"
 							flat

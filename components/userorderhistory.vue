@@ -76,7 +76,7 @@
 								<v-chip v-if="item.status == 4" size="small" rounded="lg" color="blue">
 									<span style="font-size: 12px !important; font-weight: 600; line-height: 20px"> Shipped </span>
 								</v-chip>
-								<v-chip v-if="item.status == 3" size="small" rounded="lg" color="green">
+								<v-chip v-if="item.status == 3" size="small" rounded="lg" color="mygreen">
 									<span style="font-size: 12px !important; font-weight: 600; line-height: 20px"> Delivered </span>
 								</v-chip>
 								<v-chip v-if="item.status == 1" size="small" rounded="lg" color="#906A20">

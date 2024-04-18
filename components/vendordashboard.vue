@@ -4,7 +4,7 @@
  <div class="pb-5 d-flex align-center justify-space-between">
   <p style="font-weight: 600;
 font-size: 24px;
-line-height: 30px;">Hi Nweke Franklin, Welcome back </p>
+line-height: 30px;">Hi {{vendor.ownerInfo.firstName}} {{ vendor.ownerInfo.lastName }}, Welcome back </p>
 
   <div class="d-flex align-center">
     <v-menu width="200">
@@ -238,7 +238,7 @@ color: rgba(255, 255, 255, 0.75);" class="text-capitalize">
             <span v-if="chosen !== item.sn ">
                 {{ item.total }}
             </span>
-            <v-btn v-else color="green" size="small" class=" rounded-lg"> See details</v-btn>
+            <v-btn v-else color="mygreen" size="small" class=" rounded-lg"> See details</v-btn>
         </td>
       </tr>
     </tbody>
@@ -446,7 +446,7 @@ View Details            </v-btn>
         <td style="font-size: 14px;" class="text-grey-darken-2 px-1">{{ item.total }}</td>
         <td style="font-size: 14px;" class="text-grey-lighten-1 px-1">
           
-            <v-btn color="red" variant="tonal" size="small" class=" rounded-lg"> Out of Stock</v-btn>
+            <v-btn color="myred" variant="tonal" size="small" class=" rounded-lg"> Out of Stock</v-btn>
         </td>
       </tr>
     </tbody>
@@ -480,7 +480,17 @@ color: orange;
 
 </style>
 <script>
+import { useVendorStore } from '~/stores/vendorStore';
+
 export default {
+  setup() {
+    const vendorStore = useVendorStore()
+    const vendor = vendorStore.getVendor
+
+    return {
+      vendor
+    }
+  },
   data() {
     return {
         menu:true,

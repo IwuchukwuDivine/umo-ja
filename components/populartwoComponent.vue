@@ -47,7 +47,7 @@ Current Bid
                           <div class="d-flex mt-4 align-end">
 
                 <v-btn height="44" width="161" @click="$router.push('/product_page')" rounded="xl"  style="
-    border-radius: 6px;" color="green"    flat  class=" parent-btn">
+    border-radius: 6px;" color="mygreen"    flat  class=" parent-btn">
                      <span style="
 font-weight: 600;" class="">{{showBid? 'Bid':'Shop'}} Now</span> 
                 </v-btn>

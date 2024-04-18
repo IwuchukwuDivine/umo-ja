@@ -296,7 +296,7 @@
 			<v-btn class="mx-2" style="border: 1px solid #e5e5e5" size="large" color="white" flat>
 				<span style="font-size: 14px; font-weight: 600; line-height: 20px"> Save post as draft </span>
 			</v-btn>
-			<v-btn size="large" style="border: 1px solid #e5e5e5" color="green" flat>
+			<v-btn size="large" style="border: 1px solid #e5e5e5" color="mygreen" flat>
 				<span style="font-size: 14px; font-weight: 600; line-height: 20px"> Post </span>
 			</v-btn>
 		</div>
@@ -384,7 +384,7 @@
 						<v-btn class="mx-2" style="border: 1px solid #e5e5e5" size="large" color="white" flat @click="dialog1 = false">
 							<span style="font-size: 14px; font-weight: 600; line-height: 20px"> Cancel </span>
 						</v-btn>
-						<v-btn size="large" style="border: 1px solid #e5e5e5" color="green" flat @click="schedulePostHandler">
+						<v-btn size="large" style="border: 1px solid #e5e5e5" color="mygreen" flat @click="schedulePostHandler">
 							<span style="font-size: 14px; font-weight: 600; line-height: 20px"> Schedule Post </span>
 						</v-btn>
 					</div>
@@ -413,7 +413,7 @@
 						style="color: var(--magnetic-green-4, #2c6e63); font-size: 14px; font-weight: 600; line-height: 20px; letter-spacing: -0.14px"
 						density="compact"
 						class="my-2"
-						color="green"
+						color="mygreen"
 						:items="['Basic Information', 'Shipping Details']"
 					>
 						<template v-slot:divider>
@@ -487,7 +487,7 @@
 										></v-col
 									>
 									<v-col cols="6">
-										<v-btn size="large" color="green" flat block>
+										<v-btn size="large" color="mygreen" flat block>
 											<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Save and Proceed </span></v-btn
 										></v-col
 									>
@@ -543,7 +543,7 @@
 										></v-col
 									>
 									<v-col cols="6">
-										<v-btn size="large" color="green" flat block>
+										<v-btn size="large" color="mygreen" flat block>
 											<span style="color: #edf0ef; font-size: 14px; font-weight: 600; line-height: 20px"> Save and Proceed </span></v-btn
 										></v-col
 									>

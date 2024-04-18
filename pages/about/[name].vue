@@ -9,49 +9,60 @@
 			z-index: 999;
 			border-bottom: 1px solid #ededed;
 			border-top: 1px solid #ededed;
-			padding: 6px;
 		"
 	>
 		<v-container style="max-width: 1400px; width: 100%">
-			<v-breadcrumbs class="pl-0 py-0" :items="['who we are', 'what we do', 'Our impact and goals', '']">
-				<template v-slot:divider>
-					<v-icon icon="mdi mdi-chevron-right"></v-icon>
-				</template>
-				<template v-slot:title="{ item }">
-					<span @click="selectCategory(item)" :class="{ 'text-green font-weight-bold': select === item }" style="cursor: pointer; font-size: 14px">
-						{{ item }}
-					</span>
-				</template>
-			</v-breadcrumbs>
+			<div style="margin: auto" class="py-2">
+				<div class="d-flex" style="">
+					<p
+						style="cursor: pointer; font-size: 14px"
+						:class="select == n ? 'text-mygreen font-weight-bold' : ''"
+						@click="selectCategory(n)"
+						class="font-weight-medium text-capitalize py-3 mr-4 text-grey"
+						v-for="(n, i) in ['who we are', 'what we do', 'Our impact and goals']"
+						:key="n"
+					>
+						{{ n }} <v-icon :style="i === 2 ? 'display : none' : ''" icon="mdi mdi-chevron-right"></v-icon>
+					</p>
+				</div>
+			</div>
 		</v-container>
 	</div>
 
-	<div style="margin-bottom: 100px">
-		<whoWeAre v-if="select === 'who we are'" />
-		<div v-else-if="select === 'what we do'">
-			<v-container style="max-width: 1400px; width: 100%">
-				<hi>What we do page goes here</hi>
-			</v-container>
-		</div>
-		<our-impact-and-goal v-else-if="select === 'Our impact and goals'" />
-		<whoWeAre v-else />
+	<whoWeAre v-if="select == 'who we are'" style="margin-bottom: 100px" />
+	<div v-else-if="select == 'what we do'" style="margin-bottom: 100px">
+		<hi>What we do</hi>
 	</div>
+	<our-impact-and-goal v-else-if="select == 'Our impact and goals'" style="margin-bottom: 100px" />
+	<whoWeAre v-else style="margin-bottom: 100px" />
 
 	<Mainfooter />
 </template>
-
 <script>
 export default {
 	data() {
 		return {
-			select: this.$route.params.name,
+			showImg: false,
 		};
 	},
+	computed: {
+		select() {
+			return this.$route.params.name;
+		},
+		categoryColor() {
+			return this.select == "who we are"
+				? "EDF0EF"
+				: this.select == "what we do"
+				? "FDF1ED"
+				: this.select == "Our impact and goals"
+				? "EDEDED"
+				: "EDF0EF";
+		},
+	},
+
 	methods: {
-		selectCategory(category) {
-			console.log(category);
-			this.select = category;
-			this.$router.push("/about/" + category);
+		selectCategory(n) {
+			this.$router.push("/about/" + n);
 		},
 	},
 };

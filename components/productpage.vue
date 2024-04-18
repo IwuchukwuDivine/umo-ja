@@ -30,6 +30,7 @@
 								<v-carousel v-model="carousel" class="caro mb-2" style="border-radius: 6px" hide-delimiters height="349px">
 									<v-carousel-item
 										:value="n"
+										:key="n"
 										v-for="n in 4"
 										cover
 										height="349px"
@@ -158,7 +159,7 @@
 											<v-icon size="18" icon="mdi mdi-star" class="mr-1" color="#F0B136"></v-icon>
 											<span style="color: #333; font-size: 16px !important ; font-weight: 600"> {{ n }}</span>
 										</div>
-										<v-progress-linear :model-value="20 * n - 5" style="width: 100%; left: 70px" color="green" class="linearl" height="6" rounded>
+										<v-progress-linear :model-value="20 * n - 5" style="width: 100%; left: 70px" color="mygreen" class="linearl" height="6" rounded>
 										</v-progress-linear>
 									</div>
 								</v-card>
@@ -322,7 +323,7 @@
 							<div class="px-6 py-4">
 								<p style="font-size: 20px; font-weight: 500">Set Quantity</p>
 								<div class="d-flex justify-space-between align-center my-2">
-									<p style="color: #969696; font-size: 14px; font-weight: 500; line-height: 140%">Quantity: <span style="color: #000">2</span></p>
+									<p style="color: #969696; font-size: 14px; font-weight: 500; line-height: 140%">Quantity: <span style="color: #000">{{ getItemQuantity(1) }}</span></p>
 
 									<v-btn-group border rounded="xl" divided density="compact">
 										<v-btn
@@ -350,7 +351,7 @@
 									<p style="color: #969696; font-size: 14px; font-weight: 500; line-height: 140%">Total</p>
 									<p style="color: #1e1e1e; font-size: 24px; font-weight: 600; line-height: 140%">€ 5000.00</p>
 								</div>
-								<v-btn to="/order/cart" block class="mb-2" size="large" flat color="green" rounded="xl"
+								<v-btn to="/order/cart" block class="mb-2" size="large" flat color="mygreen" rounded="xl"
 									><span style="color: #edf0ef; font-size: 14px; font-weight: 600">Add to Cart</span></v-btn
 								>
 								<v-btn

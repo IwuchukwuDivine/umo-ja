@@ -83,12 +83,12 @@ line-height: 180%; /* 25.2px */">Umoja - Connecting you to Quality African Produ
 <v-sheet style="border-radius: 15px;" class=" pb-4 mb- align-center d-flex justify-space-between">
 <v-row >
 <v-col cols="12" class="d-flex align-center justyc" md="3">
-    <v-btn size="small" variant="text"><v-icon icon="mdi mdi-store" color="green" size="18" class="mr-2"></v-icon> <span style="color: var(--carbon-4, #333);
+    <v-btn size="small" variant="text"><v-icon icon="mdi mdi-store" color="mygreen" size="18" class="mr-2"></v-icon> <span style="color: var(--carbon-4, #333);
 font-size: 14px;
 font-weight: 500;
 line-height: 120%; /* 16.8px */
 letter-spacing: -0.42px;"> Become a Vendor</span></v-btn>
-    <v-btn size="small" variant="text"><v-icon color="green" size="18" class="mr-2" icon="mdi mdi-information"></v-icon> <span style="color: var(--carbon-4, #333);
+    <v-btn size="small" variant="text"><v-icon color="mygreen" size="18" class="mr-2" icon="mdi mdi-information"></v-icon> <span style="color: var(--carbon-4, #333);
 font-size: 14px;
 font-weight: 500;
 line-height: 120%; /* 16.8px */

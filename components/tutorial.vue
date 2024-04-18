@@ -41,7 +41,7 @@
     </div>
     <div  style="z-index: 99999; position: fixed;bottom: 5px;right: 30px;"
         class="d-flex justify-space-between align-center btns ">
-        <v-btn v-show="tutorialbol" size="x-small" @click="resetTutorial()" class="btns ml-2" rounded="xl" color="red"
+        <v-btn v-show="tutorialbol" size="x-small" @click="resetTutorial()" class="btns ml-2" rounded="xl" color="myred"
             icon="mdi mdi-close"></v-btn>
         <!-- <v-btn v-show="tutorialbol" size="x-small" @click="mute()" class="btns ml-2" rounded="xl" color="black"
             :icon="muted ? 'mdi mdi-volume-high' : 'mdi mdi-volume-off'"></v-btn> -->

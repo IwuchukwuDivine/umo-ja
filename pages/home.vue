@@ -49,7 +49,7 @@ Quality African products from any part of the world.
             vendors from across Africa.
           </p>
           <div style="position:relative" class="mt-8">
-            <v-btn flat to="/vendor/profile" color="green" size="x-large"
+            <v-btn flat to="/vendor/profile" color="mygreen" size="x-large"
               >Start Exploring <v-avatar rounded="0" size="20" class="ml-4"><v-img src="https://res.cloudinary.com/dkbt6at26/image/upload/v1684373214/Vector_iu4lgn.png"></v-img></v-avatar></v-btn>
             <v-btn to="/user/login" flat variant="text" size="x-large" class="ml-2 howit"><span style="text-decoration:underline">
 
@@ -98,7 +98,7 @@ Quality African products from any part of the world.
                         :src="n"
                       ></v-img
                     ></v-avatar>
-                    <v-avatar color="green">
+                    <v-avatar color="mygreen">
                       <span style="font-size: 13px">+1499</span></v-avatar
                     >
                   </div>
@@ -152,7 +152,7 @@ Quality African products from any part of the world.
                         :src="n"
                       ></v-img
                     ></v-avatar>
-                    <v-avatar color="green">
+                    <v-avatar color="mygreen">
                       <span style="font-size: 13px">+324</span></v-avatar
                     >
                   </div>
@@ -206,7 +206,7 @@ Quality African products from any part of the world.
                         :src="n"
                       ></v-img
                     ></v-avatar>
-                    <v-avatar color="green">
+                    <v-avatar color="mygreen">
                       <span style="font-size: 13px">+2403</span></v-avatar
                     >
                   </div>
@@ -260,7 +260,7 @@ Quality African products from any part of the world.
                         :src="n"
                       ></v-img
                     ></v-avatar>
-                    <v-avatar color="green">
+                    <v-avatar color="mygreen">
                       <span style="font-size: 13px">+476</span></v-avatar
                     >
                   </div>
@@ -293,7 +293,7 @@ Quality African products from any part of the world.
       <div class="d-">
           <div  class=" d-flex">
 
-              <p class="bg-green rounded-t-lg pa-8 px-12">Buy</p>
+              <p class="bg-mygreen rounded-t-lg pa-8 px-12">Buy</p>
             </div>
           
           <div >

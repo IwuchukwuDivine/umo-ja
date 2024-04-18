@@ -11,9 +11,9 @@ import "@fortawesome/fontawesome-free/css/all.css";
 const myCustomLightTheme: ThemeDefinition = {
 	dark: false,
 	colors: {
-		green: "#2C6E63",
-		orange: "#F38218",
-		red: "#C20052",
+		mygreen: "#2C6E63",
+		myorange: "#F38218",
+		myred: "#C20052",
 	},
 };
 const myCustomDarkTheme: ThemeDefinition = {

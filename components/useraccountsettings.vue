@@ -92,7 +92,7 @@
 			<div class="mb-4 d-flex align-center justify-space-between">
 				<p style="font-size: 20px; font-weight: 600">Delete Account</p>
 				<div>
-					<v-btn rounded="xl" color="red" flat size="default" class="ml-2 menubar text-grey-darken-3">
+					<v-btn rounded="xl" color="myred" flat size="default" class="ml-2 menubar text-grey-darken-3">
 						<v-icon class="mr-2" icon="mdi mdi-trash-can-outline"></v-icon>
 						Delete Account
 					</v-btn>

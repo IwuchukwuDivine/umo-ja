@@ -65,12 +65,12 @@
 				</div>
 			</div>
 			<v-btn
-				@click="$router.push('/product_page')"
+				@click="addToCart(item)"
 				rounded="xl"
 				style="border: 1px solid #ced2d6; border-radius: 6px"
 				width="106"
 				height="28"
-				color="green"
+				color="mygreen"
 				variant="outlined"
 				flat
 				class="parent-btn ml-2"
@@ -83,6 +83,7 @@
 </template>
 <script>
 import { useLikedStore } from "~/stores/likedStore";
+
 
 export default {
 	props: ["item", "short", "category", "cover", "index", "showVendor", "showdisco"],
@@ -125,6 +126,9 @@ export default {
 	},
 
 	methods: {
+		addToCart(item) {
+			this.$emit('add-to-cart', item);
+		},
 		mockLoading() {
 			setTimeout(() => {
 				this.loaded = true;

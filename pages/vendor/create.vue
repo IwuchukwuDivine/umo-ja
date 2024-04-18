@@ -79,7 +79,7 @@
          </div>
        </template>
      </v-checkbox>
-           <v-btn to="/vendor/confirm" block color="green" flat size="x-large" class="rounded-lg"> 
+           <v-btn to="/vendor/confirm" block color="mygreen" flat size="x-large" class="rounded-lg"> 
              <span style="text-transform: none;">
  
                Create an account

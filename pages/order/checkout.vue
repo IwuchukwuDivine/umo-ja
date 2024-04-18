@@ -56,7 +56,7 @@ border: 1px solid var(--carbon-2, #CECECE);" hide-details="" append-inner-icon="
     
     <div  class=" align-center d-flex">
         
-        <v-icon color="green"  icon="mdi mdi-circle-slice-8" size="20"></v-icon>
+        <v-icon color="mygreen"  icon="mdi mdi-circle-slice-8" size="20"></v-icon>
 <div class="text-capitalize px-4">
     <p style="font-weight: 600;
 font-size: 16px;
@@ -111,8 +111,8 @@ color: #333333;" class="">Add new address</p>
      <v-text-field placeholder="Enter your zipcode" density="comfortable"  >
          </v-text-field>           
            
-         <v-btn class="textClass px-8" rounded="xl" color="green"  flat>Use this address</v-btn>          
-         <v-btn variant="tonal" class="textClass ml-2 px-8" rounded="xl" color="green" flat>Cancel</v-btn>          
+         <v-btn class="textClass px-8" rounded="xl" color="mygreen"  flat>Use this address</v-btn>          
+         <v-btn variant="tonal" class="textClass ml-2 px-8" rounded="xl" color="mygreen" flat>Cancel</v-btn>          
          
 </v-card>
 </v-card>

@@ -10,7 +10,7 @@
     <v-col cols="12" md="6">
         <v-sheet class="cardStyle">
 <div  class="d-flex mb-2 justify-space-between">
-    <v-chip flat variant="elevated" elevation="0" class="pa-5 px-6" size="large"  color="green"> <span style="font-size: 16.879px!important;
+    <v-chip flat variant="elevated" elevation="0" class="pa-5 px-6" size="large"  color="mygreen"> <span style="font-size: 16.879px!important;
 font-weight: 500;">Basic Plan</span></v-chip>
 <v-icon size="30" color="#A0A0A0" icon="mdi mdi-circle-outline"></v-icon>
 </div>
@@ -22,7 +22,7 @@ font-size: 16px;
 font-weight: 400;" class="mb-8">Our free plan has...</p>
 
 <div v-for="n in 4" :key="n" class=" mb-4 d-flex align-center ">
-<v-icon class="mr-2" icon="mdi mdi-check-circle-outline" color="green"></v-icon>
+<v-icon class="mr-2" icon="mdi mdi-check-circle-outline" color="mygreen"></v-icon>
 <p style="color: #333;
 font-size: 14px;
 font-weight: 400;
@@ -38,7 +38,7 @@ font-weight: 600;">Join for Free</span></v-btn>
     <v-col cols="12" md="6">
         <v-sheet class="cardStyle">
 <div  class="d-flex mb-2 justify-space-between">
-    <v-chip flat variant="elevated" elevation="0" class="pa-5 px-6" size="large"  color="green"> <span style="font-size: 16.879px!important;
+    <v-chip flat variant="elevated" elevation="0" class="pa-5 px-6" size="large"  color="mygreen"> <span style="font-size: 16.879px!important;
 font-weight: 500;">Premium Plan</span></v-chip>
 <v-icon size="30" color="#2C6E63" icon="mdi mdi-check-circle"></v-icon>
 </div>
@@ -50,13 +50,13 @@ font-size: 16px;
 font-weight: 400;" class="mb-8">Everything in our free plan plus...</p>
 
 <div v-for="n in 7" :key="n" class=" mb-4 d-flex align-center ">
-<v-icon class="mr-2" icon="mdi mdi-check-circle-outline" color="green"></v-icon>
+<v-icon class="mr-2" icon="mdi mdi-check-circle-outline" color="mygreen"></v-icon>
 <p style="color: #333;
 font-size: 14px;
 font-weight: 400;
 ">Lorem ipsum dolor sit amet consectetur.</p>
 </div>
-<v-btn class="mt-12" size="large" block flat color="green"><span style="
+<v-btn class="mt-12" size="large" block flat color="mygreen"><span style="
 
 font-size: 14px;
 font-weight: 600;">Join for Free</span></v-btn>

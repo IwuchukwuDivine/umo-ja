@@ -3,7 +3,7 @@
 		<div class="d-flex justify-center">
 			<v-row style="">
 				<v-col cols="12" lg="4">
-					<v-card color="green" height="260" min-width="300px" class="pt-4 px-4 mx-auto cardStyle" width="100%" style="" flat>
+					<v-card color="mygreen" height="260" min-width="300px" class="pt-4 px-4 mx-auto cardStyle" width="100%" style="" flat>
 						<div class="d-flex align-center">
 							<p style="font-weight: 400; font-size: 17px; line-height: 25px; letter-spacing: -0.01em; color: #edf0ef">
 								Total Revenue made this year (2023)
@@ -185,7 +185,7 @@
 				<div>
 					<p style="font-weight: 600; font-size: 24px" class="mb-2 d-flex align-center text-left">Most Popular Category</p>
 				</div>
-				<v-btn flat color="green" size="large" class="ml-4 text-grey-darken-3 d-flex justify-between items-center">
+				<v-btn flat color="mygreen" size="large" class="ml-4 text-grey-darken-3 d-flex justify-between items-center">
 					<v-icon class="mr-2 mt-1" icon="mdi mdi-cloud-download"></v-icon>
 					<span>Export trending products to CSV</span>
 				</v-btn>
@@ -401,7 +401,7 @@
 				<div>
 					<p style="font-weight: 600; font-size: 24px" class="mb-2 d-flex align-center text-left">Most Purchased Product</p>
 				</div>
-				<v-btn flat color="green" size="large" class="ml-4 text-grey-darken-3 d-flex justify-between items-center">
+				<v-btn flat color="mygreen" size="large" class="ml-4 text-grey-darken-3 d-flex justify-between items-center">
 					<v-icon class="mr-2 mt-1" icon="mdi mdi-cloud-download"></v-icon>
 					<span>Export trending products to CSV</span>
 				</v-btn>

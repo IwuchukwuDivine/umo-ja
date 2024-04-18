@@ -26,7 +26,7 @@
          
          <v-text-field v-model="c_password" placeholder="Repeat password" append-inner-icon="mdi mdi-eye-outline" density="comfortable"  >
          </v-text-field>
- <v-btn @click="login()" block color="green" flat size="x-large" class="rounded-lg mr-1 mt-6"> 
+ <v-btn @click="login()" block color="mygreen" flat size="x-large" class="rounded-lg mr-1 mt-6"> 
              <span style="text-transform: none;">
  
  Reset password

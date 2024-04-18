@@ -167,7 +167,7 @@
 										<p class="textClass my-2">{{ filt(n.name) }}</p>
 										<div class="d-flex align-center">
 											<h1 class="itemCost">${{ n.price }}</h1>
-											<v-chip v-if="n.oos == true" variant="default" size="small" class="ml-2 bg-green text-white rounded-lg"
+											<v-chip v-if="n.oos == true" variant="default" size="small" class="ml-2 bg-mygreen text-white rounded-lg"
 												><v-icon size="12" class="mr-1" icon="mdi mdi-clock-outline"></v-icon> Place a Bid</v-chip
 											>
 										</div>
